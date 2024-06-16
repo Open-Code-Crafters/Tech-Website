@@ -1,4 +1,4 @@
-import ClubLogo from '../assets/OCCLogo.png';
+import ClubLogo from '../assets/OCCLogoDark.png';
 
 const Home = () => {
   return (

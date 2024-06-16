@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [pageIndex,setPageIndex]=useState("home");
 
   useEffect(() => {
     if (isDarkMode) {
@@ -26,7 +27,7 @@ function App() {
     <div>
       <Router>
         <div>
-          <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
+          <Navbar pageIndex={pageIndex} setPageIndex={setPageIndex} toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
         </div>
         <Routes>
           <Route path="/" element={<Home/>} />

@@ -6,6 +6,7 @@ import AboutUs from './Components/AboutUs';
 import Compiler from './Components/Compiler';
 import Blogs from './Components/Blogs';
 import { useEffect, useState } from 'react';
+import Footer from './Components/Footer';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -35,6 +36,9 @@ function App() {
           <Route path="/compiler" element={<Compiler/>} />
           <Route path="/blogs" element={<Blogs/>} />
         </Routes>
+        <div>
+          <Footer/>
+        </div>
       </Router>
     </div>
   )
